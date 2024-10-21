@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+1) I will chose microservice-based architecture becuase it has high scalability, and when system grows it has better flexibility and high
+   maintainability (assume system in future become big trendy website)
 
-## Getting Started
+https://miro.com/app/board/uXjVLQRb6Ko=/?share_link_id=440468739601
 
-First, run the development server:
+2) NoSql (Becuase nosql databased are easy to horizontally scalabile though sharding like mechanisms when our system grow)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://miro.com/app/board/uXjVLQRb6Ko=/?share_link_id=440468739601
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3) I will go with SSR (becuase ssr approch has High SEO that will help visiter could easily find our web page though google search and SSR approch has low initial load time so it will improve use experince)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4) Next Js - frontend (Becuase it support SSR and SSG like mechanisms out of the box, large community of libraries to get things done easily , and have suspend lazy loading like mechanisms out of the box)
+   Node Js (express js) - backend - nodejs is great for building microservice-based applications, simplisity
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5) Aws - It has large amount of regions to chose so when our website grows we can easity go multi region , It has better pricing when compared to other services
+   It has lot of highly scalabile services out of the box (assume about price concerns and high scalability)
 
-## Learn More
+6) Scalability - I will contenarize those microservices use kubernates for container occustration, in kubernates we can set how many replicas needed for each deployment artifact, and it has load balancing out of the box and
+   it can set to auto scalling so based on demand sysetm can scalle, when it comes to system some microservicesn need to scale high like recommandation microservice. we can scale based on demand
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+hr@avantrio.xyz
